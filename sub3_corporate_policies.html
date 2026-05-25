@@ -35,15 +35,59 @@
             font-size: 30px;
             text-align: center;
         }
+
+        .row {
+            display: flex;
+            align-items: center;  
+            justify-content: space-between;
+            gap: 0px;
+            margin: 25px;
+            background-color: azure;
+        }
+
+        .google_row1_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        #google_para1 {
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
+        .google_row2_img {
+            width: 375px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
     </style>
 </head>
 
 <body>
     <section class="head">
         <p id="h1">Corporate Sustainability Policies</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">Companies' Eco-Friendly Policies</p>
     </section>
     
+    <div class="row">
+        <p id="google_para1">From 2010 to 2024, Google signed more than 
+            170 agreements to purchase over 22 GW of clean energy generation, 
+            similar to Portugal's total renewable energy in 2024. 
+        </p>
+        <img src="visuals/clean_energy.jpg" class="google_row1_img">
+    </div>
+
+    <div class="row">
+        <img src="visuals/geothermal_energy.webp" class="google_row2_img">
+        <img src="visuals/LDE.webp" class="google_row2_img">
+        <img src="visuals/SMR.jpg" class="google_row2_img">
+    </div>
 </body>
 </html>
 
