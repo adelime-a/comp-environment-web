@@ -36,6 +36,28 @@
             text-align: center;
         }
 
+        .sub1_google {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: Times New Roman;
+
+            background-image: 
+                url("visuals/google_logo.png=n-w1440-h810-fcrop64=1,0000114effffee75-rw");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -100px; 
+        }
+
+        .sub_title {
+            font-weight: bold;
+            color:rgb(40, 73, 58);
+            font-size: 80px;
+            text-align: center;
+        }
+
         .row {
             display: flex;
             align-items: center;  
@@ -45,18 +67,18 @@
             background-color: azure;
         }
 
-        .google_row1_img {
+        .row1_img {
             width: 500px;
             height: 250px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px black;
         }   
 
-        #google_para1 {
+        .para1 {
             font-weight: bold;
             font-size: 25px;
             color: rgb(86, 123, 105);
-            text-align: right;
+            text-align: left;
             margin: 150px;
         }
 
@@ -65,6 +87,51 @@
             height: 250px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px black;
+        }
+
+        .google_row2_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
+        }
+
+        .sub2_micro {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: Times New Roman;
+
+            background-image: 
+                url("visuals/micro_logo.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -425px; 
+        }
+
+        .micro_row2_title {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .micro_row2_img {
+            width: 375px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        .micro_row2_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
         }
     </style>
 </head>
@@ -75,12 +142,16 @@
         <p id="subtitle">Companies' Eco-Friendly Policies</p>
     </section>
     
+    <section class="sub1_google">
+        <p id="sub1_title" class="sub_title">1. Google</p>
+    </section>
+
     <div class="row">
-        <p id="google_para1">From 2010 to 2024, Google signed more than 
+        <p id="google_para1" class="para1">From 2010 to 2024, Google signed more than 
             170 agreements to purchase over 22 GW of clean energy generation, 
             similar to Portugal's total renewable energy in 2024. 
         </p>
-        <img src="visuals/clean_energy.jpg" class="google_row1_img">
+        <img src="visuals/clean_energy.jpg" class="row1_img">
     </div>
 
     <div class="row">
@@ -88,6 +159,68 @@
         <img src="visuals/LDE.webp" class="google_row2_img">
         <img src="visuals/SMR.jpg" class="google_row2_img">
     </div>
+
+    <div class="row">
+        <p class="google_row2_p">In the U.S., Google partnered with Fervo Energy on the world's 
+            first corporate agreement for enhanced geothermal power. Geothermal energy is a 
+            renewable, 24/7 baseload power and heating source that utilizes the 
+            natural thermal heat stored deep beneath the Earth's surface.
+        </p>
+        <p class="google_row2_p">Google is investing in long-duration energy storage (LDES) technologies 
+            with Energy Dome. LDES is an emerging solution that can store renewable power for 
+            longer durations, which helps grids to run on clean energy around the clock.
+        </p>
+        <p class="google_row2_p">Google signed the world's first corporate agreement to buy 
+            energy from multiple small modular reactors (SMRs) to be developed by Kairos Power. 
+            These reactors are designed to provide always-on clean power to U.S. grids by 2035.
+        </p>
+    </div>
+
+    <section class="sub2_micro">
+        <p id="sub2_title"  class="sub_title">2. Microsoft</p>
+    </section>
+
+    <div class="row">
+        <p id="micro_para1" class="para1">Microsoft has made significant strides in 
+            developing more sustainable data centres. As the world's second largest 
+            cloud computing platform, they set ambitious goals to become carbon 
+            negative, water positive, and zero waste and to protect more land than 
+            they use by 2030.
+        </p>
+        <img src="visuals/micro_data_center.jpg" class="row1_img">
+    </div>
+
+    <div class="row">
+        <p class="micro_row2_title">Carbon</p>
+        <p class="micro_row2_title">Water</p>
+        <p class="micro_row2_title">Waste</p>
+    </div>
+
+    <div class="row">
+        <img src="visuals/carbon_tax.jpg" class="micro_row2_img">
+        <img src="visuals/micro_water.jpg" class="micro_row2_img">
+        <img src="visuals/micro_waste.webp" class="micro_row2_img">
+    </div>
+
+    <div class="row">
+        <p class="micro_row2_p">Microsoft is working toward being carbon negative by 2030 and 
+            by 2050 to remove from the atmosphere an equivalent amount of all the carbon 
+            dioxide their company has emitted. They have contracted 40 gigawatts (GW) of new 
+            renewable energy supply across 26 countries — that's enough energy to power about 
+            10 million US homes. 
+        </p>
+        <p class="micro_row2_p">Microsoft's goal is to be water positive by 2030. They 
+            use water to cool their datacenters. To be water positive, Microsoft is innovating 
+            on water consumption and management to evaluate how water is used from 
+            the physical datacenter buildings all the way to the chip level. 
+        </p>
+        <p class="micro_row2_p">In datacenters, Microsoft targets preventing waste first, then 
+            focus on reusing and recovering materials. This includes reusing and recycling 
+            construction and demolition waste, diverting operational waste, and advancing 
+            circular cloud hardware and packaging. 
+        </p>
+    </div>
+    
 </body>
 </html>
 
