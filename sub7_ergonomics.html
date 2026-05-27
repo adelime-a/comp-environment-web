@@ -17,7 +17,7 @@
             flex-direction: column;
             justify-content: center;  
 
-            font-family: Times New Roman;
+            font-family: Arial;
 
             background-image: 
                 linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
@@ -39,15 +39,136 @@
             font-size: 30px;
             text-align: center;
         }
+
+        .row {
+            display: flex;
+            align-items: center;  
+            justify-content: space-between;
+            gap: 0px;
+            margin: 25px;
+            background-color: azure;
+        }
+        
+        .row1_title {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .row1_img {
+            width: 375px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }
+
+        .row1_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
+        }
+
+        #row1_title {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        .row2_laptop_p {
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 50px;
+        }
+
+        .row2_laptop_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }  
+
+        .row2_accessory_p {
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 50px;
+        }
+
+        .row2_accessory_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }  
     </style>
 </head>
 
 <body>
     <section class="head">
         <p id="h1">Ergonomic Standards for Human Health</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">Ergonomic Setups that Prevents Injuries</p>
     </section>
     
+    <div class="row">
+        <p class="row1_title">Chair</p>
+        <p class="row1_title">Desk</p>
+        <p class="row1_title">Monitor</p>
+    </div>
+
+    <div class="row">
+        <img src="visuals/erg_chair.webp" class="row1_img">
+        <img src="visuals/erg_desk.webp" class="row1_img">
+        <img src="visuals/erg_monitor.jpg" class="row1_img">
+    </div>
+
+    <div class="row">
+        <p class="row1_p">Choose a chair that supports your spine. Adjust the height 
+            of the chair so that your feet rest flat on the floor. Or use a footrest 
+            so your thighs are parallel to the floor. If the chair has armrests, position 
+            them so your arms sit gently on the armrests with your elbows close to your 
+            body and your shoulders relaxed.</p>
+        <p class="row1_p">Under the desk, make sure there's enough room for your legs 
+            and feet. If your desk has a hard edge that's not rounded, pad the edge or 
+            use a wrist rest. This protects your wrists from a problem called contact stress 
+            that can happen as a result of extended contact with a hard edge. 
+        </p>
+        <p class="row1_p">Place the computer monitor straight in front of you, directly 
+            behind your keyboard, about an arm's length away from your face. The monitor 
+            should be no closer to you than 40 cm and no further away than 74 cm. The top 
+            of the screen should be at or slightly below eye level. 
+        </p>
+    </div>
+
+    <div class="row">
+        <p id="row1_title">More Tips:</p>
+    </div>
+
+    <div class="row">
+        <p class="row2_laptop_p">Using a laptop computer may lead to discomfort because of 
+            the low screen height and cramped keyboard and touchpad. If you use a laptop 
+            at your desk, consider getting an external keyboard and mouse, along with a laptop 
+            stand, to more closely mimic a desktop computer setup. 
+        </p>
+        <img src="visuals/laptop_stand.webp" class="row2_laptop_img">
+    </div>
+
+    <div class="row">
+        <img src="visuals/erg_typing.webp" class="row2_accessory_img">
+        <p class="row2_accessory_p">Put your computer keyboard in front of you so your wrists 
+            and forearms are in line and your shoulders are relaxed. If you use a mouse or 
+            another type of pointer connected to a computer, place it within easy reach, on 
+            the same surface as your keyboard. While you are typing, keep your wrists 
+            straight, your upper arms close to your body, and your hands at or slightly 
+            below the level of your elbows. 
+        </p>
+    </div>
 </body>
 </html>
 
