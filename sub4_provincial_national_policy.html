@@ -78,6 +78,34 @@
         </p>
         <img src="visuals/recycle_center.webp" class="row1_img">
     </div>
+
+    <div class="row">
+        <p class="row2_p">
+            The Government of Canada has introduced the Greening Government Strategy to 
+            reduce the environmental impact of federal operations. The strategy aims to 
+            achieve net-zero greenhouse gas emissions from government operations by 2050 
+            while also reducing waste and improving energy efficiency.
+        </p>
+    </div>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+
+        let scroll = window.scrollY;
+
+        let hero = document.querySelector(".head");
+
+        let opacity = 1 - scroll / 700;
+
+        if (opacity < 0) {
+            opacity = 0;
+        }
+
+        hero.style.opacity = opacity;
+
+        hero.style.transform =
+            `scale(${1 - scroll * 0.0002})`;
+    });
+</script>
 </html>
 

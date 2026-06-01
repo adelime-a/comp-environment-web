@@ -52,6 +52,12 @@
             margin: 150px;
         }
 
+        .subtopic_left:hover,
+        .subtopic_right:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
         .row {
             display: flex;
             align-items: center;  
@@ -66,7 +72,8 @@
             height: 250px;
             border-radius: 10px;
             box-shadow: 2px 2px 10px black;
-        }        
+        }  
+        
     </style>
 </head>
 
@@ -141,9 +148,28 @@
     
     <div class="row">
         <a href="sub10_conclusion.html" id="sub10" class="subtopic_right">
-            Call to Action
+            Take Action
         </a>
         <img src="visuals/act_now.jpeg" class="subtopic_img">
     </div>
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+
+        let scroll = window.scrollY;
+
+        let hero = document.querySelector(".head");
+
+        let opacity = 1 - scroll / 700;
+
+        if (opacity < 0) {
+            opacity = 0;
+        }
+
+        hero.style.opacity = opacity;
+
+        hero.style.transform =
+            `scale(${1 - scroll * 0.0002})`;
+    });
+</script>
 </html>

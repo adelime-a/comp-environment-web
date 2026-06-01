@@ -51,5 +51,24 @@
     </section>
     
 </body>
+<script>
+    window.addEventListener("scroll", function() {
+
+        let scroll = window.scrollY;
+
+        let hero = document.querySelector(".head");
+
+        let opacity = 1 - scroll / 700;
+
+        if (opacity < 0) {
+            opacity = 0;
+        }
+
+        hero.style.opacity = opacity;
+
+        hero.style.transform =
+            `scale(${1 - scroll * 0.0002})`;
+    });
+</script>
 </html>
 
