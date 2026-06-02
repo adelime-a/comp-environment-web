@@ -11,6 +11,55 @@
     <title>Lab Regulations & School Policies</title>
 
     <style>
+        #menuBtn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+
+            font-size: 30px;
+
+            background: rgba(255,255,255,0.8);
+            border: none;
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            z-index: 1000;
+        }
+
+        #sidebar {
+            position: fixed;
+
+            top: 0;
+            left: -300px;
+
+            width: 250px;
+            height: 100%;
+
+            background-color: rgb(40, 60, 50);
+
+            transition: 0.3s;
+
+            padding-top: 80px;
+
+            z-index: 999;
+        }
+
+        #sidebar a {
+            display: block;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 15px 25px;
+
+            font-size: 20px;
+        }
+
+        #sidebar a:hover {
+            background-color: rgb(70,100,80);
+        }
+
         .head {
             min-height: 100vh;
 
@@ -65,6 +114,21 @@
 </head>
 
 <body>
+    <button id="menuBtn" onclick="toggleMenu()">☰</button>
+
+    <div id="sidebar">
+        <a href="sub1_environment_health.html">Environmental Impacts</a>
+        <a href="sub2_school_policies.html">School Policies</a>
+        <a href="sub3_corporate_policies.html">Corporate Sustainability</a>
+        <a href="sub4_provincial_national_policy.html">Provincial Policies</a>
+        <a href="sub5_paperless_workplace.html">Paperless Workplace</a>
+        <a href="sub6_computer_recycle.html">Computer Recycle & Reuse</a>
+        <a href="sub7_ergonomics.html">Ergonomic Standards</a>
+        <a href="sub8_energy_efficiency.html">Energy Efficiency Practices</a>
+        <a href="sub9_campaign.html">Education Campaigns</a>
+        <a href="sub10_conclusion.html">Take Action</a>
+    </div>
+
     <section class="head">
         <p id="h1">Energy Efficiency Practices</p>
         <p id="subtitle">Subtitle</p>
@@ -100,6 +164,19 @@
     </div>
 </body>
 <script>
+    function toggleMenu() {
+
+        let sidebar = document.getElementById("sidebar");
+
+        if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+        }
+        else {
+            sidebar.style.left = "0px";
+        }
+
+    }
+    
     window.addEventListener("scroll", function() {
 
         let scroll = window.scrollY;

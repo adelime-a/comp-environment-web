@@ -5,6 +5,55 @@
     <title>Environmental & Health Impacts</title>
 
     <style>
+        #menuBtn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+
+            font-size: 30px;
+
+            background: rgba(255,255,255,0.8);
+            border: none;
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            z-index: 1000;
+        }
+
+        #sidebar {
+            position: fixed;
+
+            top: 0;
+            left: -300px;
+
+            width: 250px;
+            height: 100%;
+
+            background-color: rgb(40, 60, 50);
+
+            transition: 0.3s;
+
+            padding-top: 80px;
+
+            z-index: 999;
+        }
+
+        #sidebar a {
+            display: block;
+
+            color: white;
+            text-decoration: none;
+
+            padding: 15px 25px;
+
+            font-size: 20px;
+        }
+
+        #sidebar a:hover {
+            background-color: rgb(70,100,80);
+        }
+
         .head {
             min-height: 100vh;
 
@@ -44,15 +93,15 @@
             font-family: 'Times New Roman', Times, serif;
 
             background-image: 
-                url("visuals/google_logo.png=n-w1440-h810-fcrop64=1,0000114effffee75-rw");
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/electronics.jpg");
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center -100px; 
+            background-repeat: no-repeat; 
         }
 
         .sub_title {
             font-weight: bold;
-            color:rgb(40, 73, 58);
+            color:rgb(175, 226, 201);
             font-size: 80px;
             text-align: center;
         }
@@ -66,7 +115,7 @@
             background-color: azure;
         }
 
-        .row1_img {
+        .row_img {
             width: 500px;
             height: 250px;
             border-radius: 10px;
@@ -89,8 +138,61 @@
             margin: 150px;
         }
 
+        .para_center {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 150px;
+        }
+
+        .sub2_energy {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/energy_consumption.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub3_data_center {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/data_center.webp");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub4_ergonomics {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/exercise.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
         .energy_row1_p {
-            font-size: 20px;
+            font-size: 25px;
             color: rgb(86, 123, 105);
             text-align: center;
             margin: 30px;
@@ -111,6 +213,22 @@
 </head>
 
 <body>
+
+    <button id="menuBtn" onclick="toggleMenu()">☰</button>
+
+    <div id="sidebar">
+        <a href="sub1_environment_health.html">Environmental Impacts</a>
+        <a href="sub2_school_policies.html">School Policies</a>
+        <a href="sub3_corporate_policies.html">Corporate Sustainability</a>
+        <a href="sub4_provincial_national_policy.html">Provincial Policies</a>
+        <a href="sub5_paperless_workplace.html">Paperless Workplace</a>
+        <a href="sub6_computer_recycle.html">Computer Recycle & Reuse</a>
+        <a href="sub7_ergonomics.html">Ergonomic Standards</a>
+        <a href="sub8_energy_efficiency.html">Energy Efficiency Practices</a>
+        <a href="sub9_campaign.html">Education Campaigns</a>
+        <a href="sub10_conclusion.html">Take Action</a>
+    </div>
+
     <section class="head">
         <p id="h1">Environmental & Health Impacts</p>
         <p id="subtitle">How Computers Affect Our Lives</p>
@@ -125,11 +243,11 @@
             with a plug or a battery that possesses toxic or hazardous substances (like 
             mercury), which can pose severe risk to environmental and human health.
         </p>
-        <img src="visuals/clean_energy.jpg" class="row1_img">
+        <img src="visuals/e-waste.jpg" class="row_img">
     </div>
 
     <div class="row">
-        <p id="e-waste_para2" class="para_right">
+        <p id="e-waste_para2" class="para_center">
             According to the World Health Organization, around 62 million tonnes 
             of e-waste was produced globally in 2022, and of that, only 22% was 
             documented as formally collected and recycled. Improper processing of e-waste 
@@ -148,12 +266,16 @@
             Personal computers around the world use around 140 TWh each year in total. They 
             contribute to around 2% of total global CO2 emissions.
         </p>
-
         <p class="energy_row1_p">
             Data centers consume around 1.5% of all electricity globally. They are projected 
             to electricity consumption reach approximately 950TWh by 2030 (nearly 3% of 
             global electricity consumption).
         </p>
+    </div>
+
+    <div class="row">
+        <img src="visuals/personal_comp.jpg" class="row_img">
+        <img src="visuals/data_centers.webp" class="row_img">
     </div>
 
     <section class="sub3_data_center">
@@ -168,6 +290,7 @@
             data centers emit between 180-200 million tonnes of CO2 annually and they are 
             projected to reach 320-600 million tonnes by 2030.
         </p>
+        <img src="visuals/data.png" class="row_img">
     </div>
 
     <section class="sub4_ergonomics">
@@ -175,6 +298,7 @@
     </section>
 
     <div class="row">
+        <img src="visuals/erg_sitting.png" class="row_img">
         <p class="para_right">
             Use of computers for extended hours can result in issues such as muscular 
             fatigue and visual fatigue. It is recommended to maintain a neutral posture 
@@ -208,6 +332,19 @@
     </div>
 </body>
 <script>
+    function toggleMenu() {
+
+        let sidebar = document.getElementById("sidebar");
+
+        if (sidebar.style.left === "0px") {
+            sidebar.style.left = "-300px";
+        }
+        else {
+            sidebar.style.left = "0px";
+        }
+
+    }
+    
     window.addEventListener("scroll", function() {
 
         let scroll = window.scrollY;
