@@ -37,6 +37,27 @@
             font-size: 30px;
             text-align: center;
         }
+
+        .row {
+            display: flex;
+            align-items: center;  
+            justify-content: space-between;
+            gap: 0px;
+            margin: 25px;
+            background-color: azure;
+        }
+
+
+
+
+        .tabs:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        #current_tab {
+            color:rgb(191, 62, 185)
+        }
     </style>
 </head>
 
@@ -46,6 +67,30 @@
         <p id="subtitle">Subtitle</p>
     </section>
     
+
+
+
+
+    <div class="row">
+        <a href="index.html" class="tabs">Home</a>
+        <a href="sub1_environment_health.html" class="tabs">
+            Environmental and Health Impacts
+        </a>
+        <a href="sub2_school_policies.html" class="tabs">Schol Policies</a>
+        <a href="sub3_corporate_policies.html" class="tabs">Corporate Polices</a>
+        <a href="sub4_provincial_national_policy.html" class="tabs">
+            Provincial & National Polices
+        </a>
+        <a href="sub5_paperless_workplace.html" class="tabs" id="current_tab">Paperless Workplace</a>
+    </div>
+
+    <div class="row">
+        <a href="sub6_computer_recycle.html" class="tabs">Computer Recycling & Reuse</a>
+        <a href="sub7_ergonomics.html" class="tabs">Ergonomic Standards</a>
+        <a href="sub8_energy_efficiency.html" class="tabs">Energy Efficiency Practices</a>
+        <a href="sub9_campaign.html" class="tabs">Educational & Awareness Campaigns</a>
+        <a href="sub10_conclusion.html" class="tabs">Take Action</a>
+    </div>
 </body>
 <script>
     window.addEventListener("scroll", function() {

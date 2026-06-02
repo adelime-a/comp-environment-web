@@ -34,6 +34,79 @@
             font-size: 30px;
             text-align: center;
         }
+
+        .sub1_e-waste {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                url("visuals/google_logo.png=n-w1440-h810-fcrop64=1,0000114effffee75-rw");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center -100px; 
+        }
+
+        .sub_title {
+            font-weight: bold;
+            color:rgb(40, 73, 58);
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;  
+            justify-content: space-between;
+            gap: 0px;
+            margin: 25px;
+            background-color: azure;
+        }
+
+        .row1_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
+        .energy_row1_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
+        }
+
+
+
+        
+        .tabs:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+
+        #current_tab {
+            color:rgb(191, 62, 185)
+        }
     </style>
 </head>
 
@@ -43,6 +116,96 @@
         <p id="subtitle">How Computers Affect Our Lives</p>
     </section>
     
+    <section class="sub1_e-waste">
+        <p id="sub1_title" class="sub_title">1. E-Waste</p>
+    </section>
+
+    <div class="row">
+        <p id="e-waste_para1" class="para_left">E-waste is defined as any discarded product 
+            with a plug or a battery that possesses toxic or hazardous substances (like 
+            mercury), which can pose severe risk to environmental and human health.
+        </p>
+        <img src="visuals/clean_energy.jpg" class="row1_img">
+    </div>
+
+    <div class="row">
+        <p id="e-waste_para2" class="para_right">
+            According to the World Health Organization, around 62 million tonnes 
+            of e-waste was produced globally in 2022, and of that, only 22% was 
+            documented as formally collected and recycled. Improper processing of e-waste 
+            exposes workers to high levels of toxic substances such as mercury, arsenic, and 
+            cadmium, which can cause irreversible health challenges including cancers, 
+            neurological damage and miscarriages. 
+        </p>
+    </div>
+
+    <section class="sub2_energy">
+        <p id="sub2_title" class="sub_title">2. Energy Consumption</p>
+    </section>
+
+    <div class="row">
+        <p class="energy_row1_p">
+            Personal computers around the world use around 140 TWh each year in total. They 
+            contribute to around 2% of total global CO2 emissions.
+        </p>
+
+        <p class="energy_row1_p">
+            Data centers consume around 1.5% of all electricity globally. They are projected 
+            to electricity consumption reach approximately 950TWh by 2030 (nearly 3% of 
+            global electricity consumption).
+        </p>
+    </div>
+
+    <section class="sub3_data_center">
+        <p id="sub3_title" class="sub_title">3. Data Centers</p>
+    </section>
+
+    <div class="row">
+        <p id="data_row1" class="para_left">
+            Data centers use extremely large amounts of water to cool servers. Data centers 
+            use extremely large amounts of water to cool servers.<br>
+            Majority of data centers use electricity produced using fossil fuels. Global 
+            data centers emit between 180-200 million tonnes of CO2 annually and they are 
+            projected to reach 320-600 million tonnes by 2030.
+        </p>
+    </div>
+
+    <section class="sub4_ergonomics">
+        <p id="sub4_title" class="sub_title">4. Ergonomics</p>
+    </section>
+
+    <div class="row">
+        <p class="para_right">
+            Use of computers for extended hours can result in issues such as muscular 
+            fatigue and visual fatigue. It is recommended to maintain a neutral posture 
+            when working with computers. It is also recommended to maintain good lighting 
+            levels and positioning to minimize glare and reduce visual fatigue.
+        </p>
+    </div>
+
+
+
+
+    <div class="row">
+        <a href="index.html" class="tabs">Home</a>
+        <a href="sub1_environment_health.html" class="tabs" id="current_tab">
+            Environmental and Health Impacts
+        </a>
+        <a href="sub2_school_policies.html" class="tabs">Schol Policies</a>
+        <a href="sub3_corporate_policies.html" class="tabs">Corporate Polices</a>
+        <a href="sub4_provincial_national_policy.html" class="tabs">
+            Provincial & National Polices
+        </a>
+        <a href="sub5_paperless_workplace.html" class="tabs">Paperless Workplace</a>
+    </div>
+
+    <div class="row">
+        <a href="sub6_computer_recycle.html" class="tabs">Computer Recycling & Reuse</a>
+        <a href="sub7_ergonomics.html" class="tabs">Ergonomic Standards</a>
+        <a href="sub8_energy_efficiency.html" class="tabs">Energy Efficiency Practices</a>
+        <a href="sub9_campaign.html" class="tabs">Educational & Awareness Campaigns</a>
+        <a href="sub10_conclusion.html" class="tabs">Take Action</a>
+    </div>
 </body>
 <script>
     window.addEventListener("scroll", function() {
