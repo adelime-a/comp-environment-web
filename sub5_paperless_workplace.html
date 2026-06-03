@@ -95,6 +95,82 @@
             background-color: azure;
         }
 
+         .sub_title {
+            font-weight: bold;
+            color:rgb(175, 226, 201);
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .sub1_benefits {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/paperless.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub2_strats {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/papers.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .row_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
+        .row1_title {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .row1_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
+        }
+
 
 
 
@@ -127,9 +203,68 @@
 
     <section class="head">
         <p id="h1">Paperless Workplace</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">Why Go Paperless & How</p>
     </section>
+
+    <section class="sub1_benefits">
+        <p id="sub1_title" class="sub_title">1. Benefits of Paperless Workplace</p>
+    </section>
+
+    <div class="row">
+        <p class="row1_title">Better Organization</p>
+        <p class="row1_title">Cost Reduction</p>
+        <p class="row1_title">Environment</p>
+    </div>
+
+    <div class="row">
+        <img src="visuals/messy_papers.jpg" class="row_img">
+        <img src="visuals/before_after.png" class="row_img">
+        <img src="visuals/wood_chips.jpg" class="row_img">
+    </div>
+
+    <div class="row">
+        <p class="row1_p">
+            - Eliminate time spent searching for misplaced files/sorting through file cabinets<br>
+            - Allows multiple people to work on shared documents at the same time 
+            without the need to pass around paperwork<br>
+            - Reduces space required for filing cabinets
+        </p>
+        <p class="row1_p">
+            - Reduces number of printed documents/paperwork<br>
+            - Working remotely and eliminating filing cabinets optimizes office space 
+            efficiency allowing for more collaborative zones and less real estate required<br>
+        </p>
+        <p class="row1_p">
+            - Reducing paper waste lowers companies' carbon footprint and decreases 
+            deforestation<br>
+            - Around 300 000 metric tons of paper is used worldwide every day, the average
+             North American office worker uses around 2 lbs of paper every day<br>
+        </p>
+    </div>
+
+    <section class="sub2_strats">
+        <p id="sub2_title" class="sub_title">2. Strategies to Go Paperless</p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">
+            - Set up a cloud storage folder(Microsoft OneDrive, Google Drive, etc.)<br>
+            - Upload existing paper documents to the folder<br>
+            - Encourage use of electronic communication, collaboration through digital 
+            platforms, and digital document sharing<br>
+            - Training employees to use digital tools and provide guidance on 
+            using new software efficiently<br>
+            - Gradually implement paperless initiatives for easier adaptation<br>
+            - Invest in safety software to protect sensitive information<br>
+        </p>
+        <img src="visuals/office_paperless.jpg" class="row_img">
+    </div>
+
+
     
+
+
+
 
 
 

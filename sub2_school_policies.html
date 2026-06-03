@@ -93,6 +93,81 @@
             background-color: azure;
         }
 
+        .sub1_energy {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/electricity.webp");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub2_e-waste {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/recycle_bins.webp");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub3_use {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/people_on_phone.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub_title {
+            font-weight: bold;
+            color:rgb(175, 226, 201);
+            font-size: 80px;
+            text-align: center;
+        }
+
+        .row_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
 
         .tabs:hover {
             transform: scale(1.1);
@@ -126,6 +201,48 @@
         <p id="subtitle">What Communities Can Do</p>
     </section>
     
+    <section class="sub1_energy">
+        <p id="sub1_title" class="sub_title">1. Energy Saving Practices</p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">- Turning off computers and other electronic devices when they 
+            are not in use.<br>
+            - Enabling power-saving settings on devices.<br>
+            - When not in use for extended periods, unplug devices.<br>
+            - Educating students and staff about the importance of conserving energy is crucial.
+        </p>
+        <img src="visuals/energy_saving.jpg" class="row_img">
+    </div>
+
+    <section class="sub2_e-waste">
+        <p id="sub2_title" class="sub_title">2. Enforcing E-Waste Recycling</p>
+    </section>
+
+    <div class="row">
+        <img src="visuals/electronics_.jpg" class="row_img">
+        <p class="para_right">Schools use devices such as computers, tablets, 
+            printers, projectors, etc. It is important to make sure that e-waste disposal is 
+            easily accessible to encourage proper disposal:<br>
+            Placing clearly labelled collection bins<br>
+            Partnering with local recycling centers
+        </p>
+    </div>
+
+    <section class="sub3_use">
+        <p id="sub3_title" class="sub_title">3. Responsible Tech Use</p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">
+            - Teaching digital citizenship in classrooms<br>
+            - Establishing time limits and taking breaks between use<br>
+            - Avoid excessive use of technology<br>
+        </p>
+        <img src="visuals/tech_use.png" class="row_img">
+    </div>
+
+
 
 
 

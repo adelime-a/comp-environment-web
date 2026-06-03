@@ -88,6 +88,13 @@
             text-align: center;
         }
 
+        .sub_title {
+            font-weight: bold;
+            color:rgb(175, 226, 201);
+            font-size: 80px;
+            text-align: center;
+        }
+
         .row {
             display: flex;
             align-items: center;  
@@ -97,6 +104,89 @@
             background-color: azure;
         }
 
+        .row_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
+        .sub1_recycle {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/recycle_symbol.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub2_donate {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/donate_electronics.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub3_initiative {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/hands.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .row_title {
+            font-weight: bold;
+            font-size: 30px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .row_p {
+            font-size: 20px;
+            color: rgb(86, 123, 105);
+            text-align: center;
+            margin: 30px;
+        }
 
 
 
@@ -129,9 +219,67 @@
 
     <section class="head">
         <p id="h1">Computer Recycling & Reuse</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">How Computer Recycling & Reuse Reduces E-Waste</p>
+    </section>
+
+    <section class="sub1_recycle">
+        <p id="sub1_title" class="sub_title">1. Recycling Programs</p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">
+            Material recovery through specialized facilities can extract metals like gold, 
+            copper, and silver, and reusable plastics and glass. Using reusable cling film 
+            alternatives also has the potential to reduce greenhouse gas emissions by 35%.<br>
+            Electronics often contain harmful chemicals, such as lead, mercury and cadmium, 
+            which are not an issue when the products are in use, but when the items are 
+            disposed of and start to break down, these chemicals can leach into the environment.
+        </p>
+        <img src="visuals/recycles.jpg" class="row_img">
+    </div>
+
+    <section class="sub2_donate">
+        <p id="sub2_title" class="sub_title">2. Donation Drives</p>
+    </section>
+
+    <div class="row">
+        <img src="visuals/donation_drive.jpg" class="row_img">
+        <p class="para_right">
+            - Donating devices to students, low-income families and non-profits<br>
+            - Supporting students without access to devices<br>
+            - Maximise lifespan of devices that would be otherwise discarded<br>
+            - Working with proper e-waste partners can ensure harmful substances are 
+            kept out of landfills<br>
+        </p>
+    </div>
+
+    <section class="sub3_initiative">
+        <p id="sub3_title" class="sub_title">3. Refurbishment Initiatives</p>
     </section>
     
+    <div class="row">
+        <p class="row_title">Electronic Recycling Association</p>
+        <p class="row_title">Extended Producer Responsibility</p>
+        <p class="row_title">The Restart Project</p>
+    </div>
+
+    <div class="row">
+        <img src="visuals/association.jpg" class="row_img">
+        <img src="visuals/e-waste_bin.jpg" class="row_img">
+        <img src="visuals/restart_project.jpg" class="row_img">
+    </div>
+
+    <div class="row">
+        <p class="row_p">A non-profit that collects and refurbishes used IT equipment to 
+            donate to local charities, schools and other individuals in need
+        </p>
+        <p class="row_p">Ontario regulation requires producers to ensure collected e-waste 
+            is properly disposed of
+        </p>
+        <p class="row_p">An initiative that helps people learn to repair their electronics 
+            to extend product lifespan
+        </p>
+    </div>
 
 
 
