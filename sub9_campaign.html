@@ -91,6 +91,43 @@
             text-align: center;
         }
 
+        .sub1_environment {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/light_bulb.jpg");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub2_health {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+
+            font-family: 'Times New Roman', Times, serif;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("visuals/health.png");
+            background-size: cover;
+            background-repeat: no-repeat; 
+        }
+
+        .sub_title {
+            font-weight: bold;
+            color:rgb(175, 226, 201);
+            font-size: 80px;
+            text-align: center;
+        }
+
         .row {
             display: flex;
             align-items: center;  
@@ -98,6 +135,29 @@
             gap: 0px;
             margin: 25px;
             background-color: azure;
+        }
+
+        .row_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        }   
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
         }
 
 
@@ -109,6 +169,20 @@
 
         #current_tab {
             color:rgb(191, 62, 185)
+        }
+
+        .end {
+            background-color:rgb(98, 139, 120);
+        }
+
+        .end_text {
+            font-size: 25px;
+            color:rgb(187, 240, 214);
+            text-align: center;
+            height: 125px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -131,8 +205,45 @@
 
     <section class="head">
         <p id="h1">Education & Awareness Campaigns</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">Educate Users on Responsible Technology Use</p>
     </section>
+
+    <section class="sub1_environment">
+        <p id="sub1_title" class="sub_title">1. Environmental Sustainability</p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">
+            - Informing users of the impact of their technology habits<br>
+            - Encouraging users to lower power consumption through adjusting device settings 
+            and unplugging devices when not in use, to reduce overall carbon footprint<br>
+            - Emphasizing the importance of responsible recycling and properly disposing 
+            of old electronics<br>
+            - Being mindful of AI use and use it more sustainably, avoiding 
+            unnecessary prompts<br>
+        </p>
+        <img src="visuals/ocean.avif" class="row_img">
+    </div>
+
+    <section class="sub2_health">
+        <p id="sub2_title" class="sub_title">2. Health</p>
+    </section>
+
+    <div class="row">
+        <img src="visuals/brain.png" class="row_img">
+        <p class="para_right">
+            - Promoting proper screen time management and importance of taking breaks<br>
+            - Informing users of ways to maintain proper posture<br>
+            - Teach users to establish boundaries to prevent digital burnout<br>
+            - Emphasis on avoiding blue light before sleep to prevent messing up 
+            circadian rhythms<br>
+            - Encouraging users to spend longer periods of time away from screens and 
+            promote offline activities<br>
+            - Take time to disconnect from social media<br>
+        </p>
+    </div>
+
+
     
 
 
@@ -161,6 +272,10 @@
         <a href="sub9_campaign.html" class="tabs" id="current_tab">Educational & Awareness Campaigns</a>
         <a href="sub10_conclusion.html" class="tabs">Take Action</a>
     </div>
+
+    <section class="end">
+        <p class="end_text">Computers & Environment</p>
+    </section>
 </body>
 <script>
     function toggleMenu() {

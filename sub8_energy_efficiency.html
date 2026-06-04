@@ -99,6 +99,63 @@
             background-color: azure;
         }
 
+        .row_img {
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px black;
+        } 
+
+        .para_left {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: left;
+            margin: 150px;
+        }
+
+        .para_right {
+            font-weight: normal;
+            font-size: 25px;
+            color: rgb(86, 123, 105);
+            text-align: right;
+            margin: 150px;
+        }
+
+        .row1 {
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial;
+
+            background-image: 
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("visuals/energy_efficiency.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        #row1_p {
+            background: transparent; 
+            border: none;
+
+            font-weight: bold;
+            color: rgb(190, 245, 219);
+            font-size: 27px;
+            text-align: center;
+
+            max-width: 900px;
+            margin: 0;
+        }
+
 
 
 
@@ -109,6 +166,20 @@
 
         #current_tab {
             color:rgb(191, 62, 185)
+        }
+
+        .end {
+            background-color:rgb(98, 139, 120);
+        }
+
+        .end_text {
+            font-size: 25px;
+            color:rgb(187, 240, 214);
+            text-align: center;
+            height: 125px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -131,8 +202,45 @@
 
     <section class="head">
         <p id="h1">Energy Efficiency Practices</p>
-        <p id="subtitle">Subtitle</p>
+        <p id="subtitle">How to Use Energy More Efficiently</p>
     </section>
+
+    <section class="row1">
+        <p id="row1_p">Energy-efficient practices help reduce electricity consumption, 
+            minimize environmental impact and also lower electricity bills.
+        </p>
+    </section>
+
+    <div class="row">
+        <p class="para_left">
+            Using Energy Efficient Hardware:<br>
+            - Reducing electricity bills<br>
+            - Minimize energy lost as heat, generating less excess heat and protecting the 
+            battery<br>
+            - Reducing greenhouse gas emissions<br>
+        </p>
+        <img src="visuals/smart_energy.jpg" class="row_img">
+    </div>
+
+    <div class="row">
+        <img src="visuals/energy_saving_mode.webp" class="row_img">
+        <p class="para_right">
+            Enabling Power-Saving Modes:<br>
+            - Extended battery life for laptops,tablets and smartphones, reducing e-waste<br>
+            - Automatic management of energy consumption<br>
+            - Does not require user to shut down device<br>
+        </p>
+    </div>
+
+    <div class="row">
+        <p class="para_left">
+            Turning Off Devices When Not in Use:<br>
+            - Lowered electricity bills<br>
+            - Reducing wasted energy from devices on standby<br>
+            - Reduces demand for electricity<br>
+        </p>
+        <img src="visuals/turn_off.jpg" class="row_img">
+    </div>
     
 
 
@@ -162,6 +270,10 @@
         <a href="sub9_campaign.html" class="tabs">Educational & Awareness Campaigns</a>
         <a href="sub10_conclusion.html" class="tabs">Take Action</a>
     </div>
+
+    <section class="end">
+        <p class="end_text">Computers & Environment</p>
+    </section>
 </body>
 <script>
     function toggleMenu() {
