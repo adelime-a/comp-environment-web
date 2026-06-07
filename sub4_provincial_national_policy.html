@@ -123,6 +123,17 @@
             margin: 100px;
         }
 
+        .text_column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text_column a {
+            font-size: 20px;
+            margin-left: 100px;
+            color: rgb(86, 123, 105);
+        }
+
 
 
 
@@ -174,13 +185,18 @@
     </section>
     
     <div class="row">
-        <p class="row1_p">Provincial and municipal governments play an important role in 
-            managing e-waste and reducing environmental harm. In Ontario, residents can use 
-            waste management resources such as the Peel Region Waste Sorter to determine how 
-            to properly dispose of old electronics. This helps prevent electronic devices from 
-            being sent to landfills, where hazardous materials such as lead, mercury, and 
-            lithium batteries can contaminate soil and groundwater.
-        </p>
+        <div class="text_column">
+            <p class="row1_p">Provincial and municipal governments play an important role in 
+                managing e-waste and reducing environmental harm. In Ontario, residents can use 
+                waste management resources such as the Peel Region Waste Sorter to determine how 
+                to properly dispose of old electronics. This helps prevent electronic devices from 
+                being sent to landfills, where hazardous materials such as lead, mercury, and 
+                lithium batteries can contaminate soil and groundwater.
+            </p>
+            <a href="https://peelregion.ca/waste/sorter/crc/electronic-waste">
+                Peel Waste Sorter
+            </a>
+        </div>
         <img src="visuals/recycle_center.webp" class="row1_img">
     </div>
 
